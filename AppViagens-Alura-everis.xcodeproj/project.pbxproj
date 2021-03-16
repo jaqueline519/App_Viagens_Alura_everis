@@ -13,6 +13,10 @@
 		EA33B79826006BFF008A117B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA33B79626006BFF008A117B /* Main.storyboard */; };
 		EA33B79A26006C05008A117B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA33B79926006C05008A117B /* Assets.xcassets */; };
 		EA33B79D26006C05008A117B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA33B79B26006C05008A117B /* LaunchScreen.storyboard */; };
+		EAFF646B2600DA9A00F76F6D /* Viagens.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF646A2600DA9A00F76F6D /* Viagens.swift */; };
+		EAFF646F2600DE9F00F76F6D /* ViagemDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF646E2600DE9F00F76F6D /* ViagemDAO.swift */; };
+		EAFF64722600E1D200F76F6D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF64712600E1D200F76F6D /* TableViewCell.swift */; };
+		EAFF647A2600E7AB00F76F6D /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = EAFF64792600E7AB00F76F6D /* Assets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		EA33B79926006C05008A117B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA33B79C26006C05008A117B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA33B79E26006C05008A117B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAFF646A2600DA9A00F76F6D /* Viagens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viagens.swift; sourceTree = "<group>"; };
+		EAFF646E2600DE9F00F76F6D /* ViagemDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViagemDAO.swift; sourceTree = "<group>"; };
+		EAFF64712600E1D200F76F6D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		EAFF64792600E7AB00F76F6D /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,57 @@
 			children = (
 				EA33B79026006BFF008A117B /* AppDelegate.swift */,
 				EA33B79226006BFF008A117B /* SceneDelegate.swift */,
-				EA33B79426006BFF008A117B /* ViewController.swift */,
+				EAFF64832601318900F76F6D /* ViagemDAO */,
+				EAFF647E26012F3200F76F6D /* Model */,
+				EAFF647F26012F4900F76F6D /* Home */,
+				EAFF64792600E7AB00F76F6D /* Assets */,
 				EA33B79626006BFF008A117B /* Main.storyboard */,
 				EA33B79926006C05008A117B /* Assets.xcassets */,
 				EA33B79B26006C05008A117B /* LaunchScreen.storyboard */,
 				EA33B79E26006C05008A117B /* Info.plist */,
 			);
 			path = "AppViagens-Alura-everis";
+			sourceTree = "<group>";
+		};
+		EAFF647E26012F3200F76F6D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EAFF646A2600DA9A00F76F6D /* Viagens.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EAFF647F26012F4900F76F6D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EAFF64822601316300F76F6D /* View */,
+				EAFF6480260130C600F76F6D /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EAFF6480260130C600F76F6D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA33B79426006BFF008A117B /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EAFF64822601316300F76F6D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EAFF64712600E1D200F76F6D /* TableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EAFF64832601318900F76F6D /* ViagemDAO */ = {
+			isa = PBXGroup;
+			children = (
+				EAFF646E2600DE9F00F76F6D /* ViagemDAO.swift */,
+			);
+			path = ViagemDAO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA33B79D26006C05008A117B /* LaunchScreen.storyboard in Resources */,
+				EAFF647A2600E7AB00F76F6D /* Assets in Resources */,
 				EA33B79A26006C05008A117B /* Assets.xcassets in Resources */,
 				EA33B79826006BFF008A117B /* Main.storyboard in Resources */,
 			);
@@ -138,6 +191,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA33B79526006BFF008A117B /* ViewController.swift in Sources */,
+				EAFF646F2600DE9F00F76F6D /* ViagemDAO.swift in Sources */,
+				EAFF646B2600DA9A00F76F6D /* Viagens.swift in Sources */,
+				EAFF64722600E1D200F76F6D /* TableViewCell.swift in Sources */,
 				EA33B79126006BFF008A117B /* AppDelegate.swift in Sources */,
 				EA33B79326006BFF008A117B /* SceneDelegate.swift in Sources */,
 			);
