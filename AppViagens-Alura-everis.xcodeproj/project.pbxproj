@@ -13,6 +13,8 @@
 		EA33B79826006BFF008A117B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA33B79626006BFF008A117B /* Main.storyboard */; };
 		EA33B79A26006C05008A117B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA33B79926006C05008A117B /* Assets.xcassets */; };
 		EA33B79D26006C05008A117B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA33B79B26006C05008A117B /* LaunchScreen.storyboard */; };
+		EA9A3F4526027D08001B6C03 /* PacotesViagensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9A3F4426027D08001B6C03 /* PacotesViagensViewController.swift */; };
+		EA9A3F4926027F77001B6C03 /* PacoteViagemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9A3F4826027F77001B6C03 /* PacoteViagemCollectionViewCell.swift */; };
 		EAFF646B2600DA9A00F76F6D /* Viagens.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF646A2600DA9A00F76F6D /* Viagens.swift */; };
 		EAFF646F2600DE9F00F76F6D /* ViagemDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF646E2600DE9F00F76F6D /* ViagemDAO.swift */; };
 		EAFF64722600E1D200F76F6D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF64712600E1D200F76F6D /* TableViewCell.swift */; };
@@ -28,6 +30,8 @@
 		EA33B79926006C05008A117B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA33B79C26006C05008A117B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA33B79E26006C05008A117B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA9A3F4426027D08001B6C03 /* PacotesViagensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacotesViagensViewController.swift; sourceTree = "<group>"; };
+		EA9A3F4826027F77001B6C03 /* PacoteViagemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacoteViagemCollectionViewCell.swift; sourceTree = "<group>"; };
 		EAFF646A2600DA9A00F76F6D /* Viagens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viagens.swift; sourceTree = "<group>"; };
 		EAFF646E2600DE9F00F76F6D /* ViagemDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViagemDAO.swift; sourceTree = "<group>"; };
 		EAFF64712600E1D200F76F6D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 				EAFF64832601318900F76F6D /* ViagemDAO */,
 				EAFF647E26012F3200F76F6D /* Model */,
 				EAFF647F26012F4900F76F6D /* Home */,
+				EA9A3F4126027C94001B6C03 /* Pacotes */,
 				EAFF64792600E7AB00F76F6D /* Assets */,
 				EA33B79626006BFF008A117B /* Main.storyboard */,
 				EA33B79926006C05008A117B /* Assets.xcassets */,
@@ -76,6 +81,31 @@
 				EA33B79E26006C05008A117B /* Info.plist */,
 			);
 			path = "AppViagens-Alura-everis";
+			sourceTree = "<group>";
+		};
+		EA9A3F4126027C94001B6C03 /* Pacotes */ = {
+			isa = PBXGroup;
+			children = (
+				EA9A3F4326027CAE001B6C03 /* View */,
+				EA9A3F4226027CA7001B6C03 /* Controller */,
+			);
+			path = Pacotes;
+			sourceTree = "<group>";
+		};
+		EA9A3F4226027CA7001B6C03 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA9A3F4426027D08001B6C03 /* PacotesViagensViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EA9A3F4326027CAE001B6C03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA9A3F4826027F77001B6C03 /* PacoteViagemCollectionViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		EAFF647E26012F3200F76F6D /* Model */ = {
@@ -190,8 +220,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA9A3F4526027D08001B6C03 /* PacotesViagensViewController.swift in Sources */,
 				EA33B79526006BFF008A117B /* ViewController.swift in Sources */,
 				EAFF646F2600DE9F00F76F6D /* ViagemDAO.swift in Sources */,
+				EA9A3F4926027F77001B6C03 /* PacoteViagemCollectionViewCell.swift in Sources */,
 				EAFF646B2600DA9A00F76F6D /* Viagens.swift in Sources */,
 				EAFF64722600E1D200F76F6D /* TableViewCell.swift in Sources */,
 				EA33B79126006BFF008A117B /* AppDelegate.swift in Sources */,
