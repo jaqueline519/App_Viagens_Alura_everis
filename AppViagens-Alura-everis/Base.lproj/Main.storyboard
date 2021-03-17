@@ -89,8 +89,8 @@
                                             </constraint>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ESPECIAL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HC2-VP-wH2">
-                                        <rect key="frame" x="41" y="70" width="179" height="27.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ESPECIAL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HC2-VP-wH2">
+                                        <rect key="frame" x="41" y="50" width="179" height="62"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="27.5" id="IJM-xH-238"/>
                                         </constraints>
@@ -98,7 +98,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="36"/>
                                         </variation>
                                     </label>
                                 </subviews>
@@ -176,6 +176,7 @@
                                                 <constraint firstItem="2Ec-tE-Pih" firstAttribute="top" secondItem="E3p-WM-NpL" secondAttribute="top" id="DUL-HO-f6n"/>
                                                 <constraint firstAttribute="bottom" secondItem="7qS-Bi-5ud" secondAttribute="bottom" constant="1.5" id="MUD-0I-EFg"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2Ec-tE-Pih" secondAttribute="trailing" constant="20" symbolic="YES" id="MtO-yh-utA"/>
+                                                <constraint firstItem="7qS-Bi-5ud" firstAttribute="top" secondItem="c8x-FW-0L9" secondAttribute="bottom" constant="-1.5" id="Qb1-GH-oTZ"/>
                                                 <constraint firstItem="c8x-FW-0L9" firstAttribute="leading" secondItem="E3p-WM-NpL" secondAttribute="leading" constant="7" id="VHc-Xl-ybD"/>
                                                 <constraint firstItem="2Ec-tE-Pih" firstAttribute="leading" secondItem="E3p-WM-NpL" secondAttribute="leading" constant="7" id="Zud-2Z-mfE"/>
                                                 <constraint firstItem="gAq-PK-msp" firstAttribute="top" secondItem="c8x-FW-0L9" secondAttribute="bottom" constant="-1" id="ed6-oc-nHZ"/>
