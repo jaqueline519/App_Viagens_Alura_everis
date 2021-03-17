@@ -42,7 +42,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.imagemViagem.clipsToBounds = true
         cell.imagemViagem.layer.masksToBounds = true
         cell.imagemViagem.contentMode = .scaleAspectFill
-
+        
         return cell
     }
     
