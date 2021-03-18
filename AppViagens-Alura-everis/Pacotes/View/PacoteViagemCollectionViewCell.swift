@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PacoteViagemCollectionViewCell: UICollectionViewCell {
+class PacoteViagemCollectionViewCell: UICollectionViewCell{
     
     @IBOutlet weak var imagemViagem: UIImageView!
     
