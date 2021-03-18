@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA1C958926038C7900EBB5AD /* ViewCellComponent.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1C958826038C7900EBB5AD /* ViewCellComponent.xib */; };
+		EA1C958C26038CCD00EBB5AD /* ViewCellComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1C958B26038CCD00EBB5AD /* ViewCellComponent.swift */; };
+		EA1C958F26038E6400EBB5AD /* AluraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1C958E26038E6400EBB5AD /* AluraView.xib */; };
+		EA1C959226038E8600EBB5AD /* AluraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1C959126038E8600EBB5AD /* AluraView.swift */; };
 		EA33B79126006BFF008A117B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33B79026006BFF008A117B /* AppDelegate.swift */; };
 		EA33B79326006BFF008A117B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33B79226006BFF008A117B /* SceneDelegate.swift */; };
 		EA33B79526006BFF008A117B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33B79426006BFF008A117B /* ViewController.swift */; };
@@ -22,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA1C958826038C7900EBB5AD /* ViewCellComponent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewCellComponent.xib; sourceTree = "<group>"; };
+		EA1C958B26038CCD00EBB5AD /* ViewCellComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCellComponent.swift; sourceTree = "<group>"; };
+		EA1C958E26038E6400EBB5AD /* AluraView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AluraView.xib; sourceTree = "<group>"; };
+		EA1C959126038E8600EBB5AD /* AluraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AluraView.swift; sourceTree = "<group>"; };
 		EA33B78D26006BFF008A117B /* AppViagens-Alura-everis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppViagens-Alura-everis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA33B79026006BFF008A117B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA33B79226006BFF008A117B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				EA9A3F4426027D08001B6C03 /* PacotesViagensViewController.swift */,
+				EA1C958B26038CCD00EBB5AD /* ViewCellComponent.swift */,
+				EA1C959126038E8600EBB5AD /* AluraView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -104,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				EA9A3F4826027F77001B6C03 /* PacoteViagemCollectionViewCell.swift */,
+				EA1C958826038C7900EBB5AD /* ViewCellComponent.xib */,
+				EA1C958E26038E6400EBB5AD /* AluraView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -208,7 +220,9 @@
 			files = (
 				EA33B79D26006C05008A117B /* LaunchScreen.storyboard in Resources */,
 				EAFF647A2600E7AB00F76F6D /* Assets in Resources */,
+				EA1C958F26038E6400EBB5AD /* AluraView.xib in Resources */,
 				EA33B79A26006C05008A117B /* Assets.xcassets in Resources */,
+				EA1C958926038C7900EBB5AD /* ViewCellComponent.xib in Resources */,
 				EA33B79826006BFF008A117B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,6 +240,8 @@
 				EA9A3F4926027F77001B6C03 /* PacoteViagemCollectionViewCell.swift in Sources */,
 				EAFF646B2600DA9A00F76F6D /* Viagens.swift in Sources */,
 				EAFF64722600E1D200F76F6D /* TableViewCell.swift in Sources */,
+				EA1C959226038E8600EBB5AD /* AluraView.swift in Sources */,
+				EA1C958C26038CCD00EBB5AD /* ViewCellComponent.swift in Sources */,
 				EA33B79126006BFF008A117B /* AppDelegate.swift in Sources */,
 				EA33B79326006BFF008A117B /* SceneDelegate.swift in Sources */,
 			);

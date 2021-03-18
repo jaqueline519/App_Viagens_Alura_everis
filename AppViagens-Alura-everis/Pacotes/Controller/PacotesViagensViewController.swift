@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PacotesViagensViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
+class PacotesViagensViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
     
     @IBOutlet weak var colecaoPacotesViagens: UICollectionView!
     let listaViagens: Array<Viagem> = ViagemDAO().retornaTodasAsViagens()
@@ -31,8 +31,9 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
     
     celulaPacote.labelTitulo.text = viagemAtual.titulo
     celulaPacote.labelPreco.text = viagemAtual.preco
+    celulaPacote.labelQuantidadeDeDias.text = "\(viagemAtual.quantidadeDeDias)"
     celulaPacote.imagemViagem.image = UIImage(named: viagemAtual.caminhoDaImagem)
-    celulaPacote.layer.borderWidth = 0.5
+    celulaPacote.layer.borderWidth = 0.2
     celulaPacote.layer.borderColor = UIColor(red: 85.0/255.0, green: 85.0/255.0, blue: 85.0/255.0, alpha: 85.0/255.0).cgColor
     celulaPacote.layer.cornerRadius = 8
     
@@ -43,8 +44,12 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
     return celulaPacote
 }
 
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionView, sizeForItemAt indexPath: IndexPath) -> CGSize{
-        let larguraCelula = collectionView.bounds.width / 2
-        return CGSize(width: larguraCelula-15, height:160)
-        }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+
+        let larguraCelula = (collectionView.bounds.width / 2) - 8
+
+        return CGSize(width: larguraCelula, height: larguraCelula)
+
+    }
+
 }
