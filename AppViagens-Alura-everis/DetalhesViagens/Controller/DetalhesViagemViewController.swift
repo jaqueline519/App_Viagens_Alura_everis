@@ -23,31 +23,26 @@ class DetalhesViagemViewController: UIViewController {
     
     @IBOutlet weak var labelPrecoPacoteViagem: UILabel!
     
+    @IBOutlet weak var scrollPrincipal: UIScrollView!
     var pacoteSelecionado: PacoteViagem? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+
         if let pacote = pacoteSelecionado {
             self.imagemPacoteViagem.image = UIImage(named: pacote.viagem.caminhoDaImagem)
             self.labelTituloPacoteViagem.text = pacote.viagem.titulo
             self.labelDataViagem.text = pacote.dataViagem
             self.labelPrecoPacoteViagem.text = pacote.viagem.preco
             self.labelDescricaoPacoteViagem.text = pacote.descricao
-            
-        }
-        // Do any additional setup after loading the view.
+           
+     
+               
+            func didReceiveMemoryWarning(){
+                super.didReceiveMemoryWarning()
+            }
+     
+       
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+}
 }

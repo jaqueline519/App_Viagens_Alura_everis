@@ -58,6 +58,7 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
     celulaPacote.imagemViagem.layer.masksToBounds = true
     celulaPacote.imagemViagem.contentMode = .scaleAspectFill
     
+    
     return celulaPacote
 }
 
