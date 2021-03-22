@@ -62,11 +62,11 @@ class DetalhesViagemViewController: UIViewController {
                    navigation.popViewController(animated: true)
                }
     }
-    @IBAction func textFieldEntrouFoco(_ sender: UITextField) {
+    @IBAction func textFieldEntrouFocoData(_ sender: UITextField) {
         let datePickerView = UIDatePicker()
-                datePickerView.datePickerMode = .date
-                sender.inputView = datePickerView
-                datePickerView.addTarget(self, action: #selector(exibeDataTextField(sender:)), for: .valueChanged)
-            }
-
+        datePickerView.datePickerMode = .date
+        datePickerView.preferredDatePickerStyle = .wheels
+        sender.inputView = datePickerView
+        datePickerView.addTarget(self, action: #selector(exibeDataTextField(sender:)), for: .valueChanged)
+    }
 }
