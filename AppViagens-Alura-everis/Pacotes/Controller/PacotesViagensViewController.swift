@@ -19,7 +19,7 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
     var listaComTodasViagens: Array<PacoteViagem> = PacoteViagemDAO().retornaTodasAsViagens()
     var listaViagens:Array<PacoteViagem> = []
     
-    
+    //ciclo de vida
     override func viewDidLoad() {
         super.viewDidLoad()
         listaViagens = listaComTodasViagens
@@ -38,26 +38,14 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "detalhes") as! DetalhesViagemViewController
         controller.pacoteSelecionado = pacote
-        self.present(controller, animated: true, completion: nil    )
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
 func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let celulaPacote = collectionView.dequeueReusableCell(withReuseIdentifier: "celulaPacote", for: indexPath) as! PacoteViagemCollectionViewCell
     
     let pacoteAtual = listaViagens[indexPath.item]
-    
-    celulaPacote.labelTitulo.text = pacoteAtual.viagem.titulo
-    celulaPacote.labelPreco.text = pacoteAtual.viagem.preco
-    celulaPacote.labelQuantidadeDeDias.text = "\(pacoteAtual.viagem.quantidadeDeDias)"
-    celulaPacote.imagemViagem.image = UIImage(named: pacoteAtual.viagem.caminhoDaImagem)
-    celulaPacote.layer.borderWidth = 0.2
-    celulaPacote.layer.borderColor = UIColor(red: 85.0/255.0, green: 85.0/255.0, blue: 85.0/255.0, alpha: 85.0/255.0).cgColor
-    celulaPacote.layer.cornerRadius = 8
-    
-    celulaPacote.imagemViagem.clipsToBounds = true
-    celulaPacote.imagemViagem.layer.masksToBounds = true
-    celulaPacote.imagemViagem.contentMode = .scaleAspectFill
-    
+    celulaPacote.configuraCell(pacoteViagem: pacoteAtual)
     
     return celulaPacote
 }
@@ -74,7 +62,7 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         listaViagens = listaComTodasViagens
         if searchText != ""{
-            let filtroListaViagem = NSPredicate(format: "titulo contains %@", searchText)
+            let filtroListaViagem = NSPredicate(format: "viagem.titulo contains %@", searchText)
             let listaFiltrada: Array<PacoteViagem> = (listaViagens as NSArray).filtered(using: filtroListaViagem) as! Array
             listaViagens = listaFiltrada
         }
